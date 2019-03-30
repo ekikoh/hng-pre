@@ -1,1 +1,3 @@
-#### hng github pre-task
+### hng github pre-task
+
+This repo is a placeholder
