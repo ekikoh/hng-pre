@@ -24,4 +24,4 @@ def caesar_crypt(string, shift)
 
 end
 
-puts caesar_crypt('aba is good', 1)
+puts caesar_crypt('aba is good', 5)
