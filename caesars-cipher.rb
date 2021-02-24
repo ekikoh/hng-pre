@@ -1,17 +1,18 @@
 def caesar_crypt(string, shift)
+
   alphabets = 'abcdefghijklmnopqrstuvwxyz'.split('')
   encrypted_word = []
   param_string = string.downcase.split('')
 
-  for a in param_string do
+  for letter in param_string do
     # if spaces in text, respect the spaces
-    if a == " "
+    if letter == " "
       encrypted_word.push(" ")
     end
-    if alphabets.include?(a)
+    if alphabets.include?(letter)
       # wrap when it gets to end of alphabets
-      if ((alphabets.find_index(a) % 25) != 0)
-        shifted = 25 - (alphabets.find_index(a) % 25)
+      if ((alphabets.find_index(letter) % 25) != 0)
+        shifted = 25 - (alphabets.find_index(letter) % 25)
         shifted = (shift - shifted) - 1
       else
         shifted = shift
@@ -23,4 +24,4 @@ def caesar_crypt(string, shift)
 
 end
 
-puts caesar_crypt('What a string', 8)
+puts caesar_crypt('aba is good', 1)
