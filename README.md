@@ -1,3 +1,3 @@
 ### Ruby Challenges
 
-- Caesars cipher - Two approches
+- Caesars cipher - two approches
