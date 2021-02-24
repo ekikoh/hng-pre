@@ -10,10 +10,11 @@ def caesar_crypt(string, shift)
     end
     if alphabets.include?(a)
       # wrap when it gets to end of alphabets
-      if alphabets.find_index(a) >= 25
-        shifted = shift - 1
+      if ((alphabets.find_index(a) % 25) != 0)
+        shifted = 25 - (alphabets.find_index(a) % 25)
+        shifted = (shift - shifted) - 1
       else
-        shifted = alphabets.find_index(a) + shift
+        shifted = shift
       end
       encrypted_word.push(alphabets[shifted])
     end
@@ -22,4 +23,4 @@ def caesar_crypt(string, shift)
 
 end
 
-puts caesar_crypt('what a string', 3)
+puts caesar_crypt('What a string', 8)
