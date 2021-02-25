@@ -1,12 +1,15 @@
 string_arr = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
 def sub_strings(word, arr)
+  result = {}
+  # Might as well use arr.each here, Oh.. well!!
   arr.length.times do |w|
     if word.downcase.include?(arr[w].downcase)
-      puts arr[w]
+      result[arr[w]] = 0
     end
   end
+  result
 end
 
 
-sub_strings("Howdy partner, sit down! How's it going?", string_arr)
+puts sub_strings("Howdy partner", string_arr)
