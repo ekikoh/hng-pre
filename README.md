@@ -1,4 +1,4 @@
 ### Ruby Challenges
 
 - Caesars cipher - two approches
-- Sub string
+- Sub strings
