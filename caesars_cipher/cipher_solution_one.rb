@@ -1,5 +1,4 @@
 def caesar_crypt(string, shift)
-
   alphabets = 'abcdefghijklmnopqrstuvwxyz'.split('')
   encrypted_word = []
   param_string = string.downcase.split('')
@@ -21,7 +20,6 @@ def caesar_crypt(string, shift)
     end
   end
   encrypted_word.join('')
-
 end
 
 puts caesar_crypt('aba is good', 5)
